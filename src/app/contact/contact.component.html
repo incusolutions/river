@@ -1,0 +1,214 @@
+<div class="bannercontact">
+    <div class="container">
+        <h1 class="bannerh1"
+            style="color: var(--bs-body-bg);font-family: Roboto, sans-serif;font-style: italic;font-weight: bold;font-size: 80px;padding-top: 22%;text-align: center;">
+            Contact Us</h1><a class="departitembt" href="tel:8133742353"
+            style="width: 190px;margin: 0 auto; padding-top:20px; padding-bottom:25px"><img
+                src="assets/img/Recurso-12.png" style="margin-bottom: 24px;">Call US</a>
+    </div>
+    <div class="onda"></div>
+</div>
+<div class="row" id="formi" style="background: #dbe0d5;padding-bottom: 64px;">
+    <div class="col" style="margin-top: 74px;">
+        <form>
+            <div class="container container80">
+                <div class="formblue">
+                    <div class="row">
+                        <div class="col-12 ">
+                            <h1 style="text-align: center;">Send Us a Message</h1>
+                            <p style="text-align: center;">For all enquiries please complete the form below and we’ll
+                                get back to you soon.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-12 col-md-6 col-xl-6">
+                            <input class="form-control" type="text" required  placeholder="Name" name="name" [(ngModel)]="objectmessage.name">
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-6">
+                            <input class="form-control" type="email" required  pattern=".+@beststartupever\.com" placeholder="Email Address" name="email" [(ngModel)]="objectmessage.email">
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 32px;">
+                        <div class="col-12">
+                            <textarea class="form-control" required placeholder="Message" rows="5" name="message" [(ngModel)]="objectmessage.message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="margin-top: 27px;text-align: right;"><button class="btn greensubmit"
+                                type="button" (click)="senmessage()">Send</button></div>
+                    </div>
+
+                    <div class="row" class="responde" *ngIf="this.mensaje!=''">
+                            <span>{{this.mensaje}}</span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col" id="osm-map1"></div>
+</div>
+<div style="background: #dbe0d5;padding-top: 62px;">
+    <div class="container container80" >
+        <form>
+            <div class="row formblue2">
+                <div class="col col-12 col-md-4 col-xl-4"><img src="assets/img/Recurso-14.png" width="100%"></div>
+                <div class="col col-12 col-md-8 col-xl-8 inputssugge" >
+                    <input class="form-control" type="text" placeholder="Name (Optional)" [(ngModel)]="objectsugge.name">
+                    <textarea class="form-control"rows="5" placeholder="Suggestion /Feedback" style="margin-top: 32px;" [(ngModel)]="objectsugge.sugee"></textarea>
+                        
+                        <button class="btn greensubmit" type="button" style="margin-top: 27px;" (click)="sendsugge()">Send</button>
+                    </div>
+
+                        <div class="responde" style="margin-top: 20px;"  *ngIf="this.mensaje2!=''">
+                            <span>{{this.mensaje2}}</span>
+                    </div>
+            </div>
+          
+        </form>
+    </div>
+    <div class="row">
+        <div class="col" style="text-align: center;padding-top: 34px;padding-bottom: 94px;"><a href="#"
+                style="font-family: 'Open Sans', sans-serif;color: #333333;">Privacy Policy</a></div>
+    </div>
+</div>
+
+<div class="container">
+    <app-btsorder></app-btsorder>
+</div>
+
+
+
+<div class="wemake" >
+    <div class="row bluesecc" style="padding-top: 100px;">
+        <div class="col centrar">
+            <div class="container">
+                <div class="col col-12 centrar">
+                    <h1 class="wemak" style="color: var(--bs-body-bg);">We make it easy to connect on all platforms</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row movil">
+        <div class="col">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-1"></div>
+                    <div class="col col-12 col-md-7"><img src="assets/img/4.png" width="100%"></div>
+                    <div class="col col-12 col-md-3 codeqr" style="margin-top: 58px;">
+                        <h4 style="color: var(--bs-body-bg);">Download our Digital Business Card</h4><img
+                            src="assets/img/qr.png" width="80%" style="margin-top: 36px;"><img
+                            src="assets/img/Recurso-7-1.png" width="80%" style="margin-top: 39px;">
+                    </div>
+                    <div class="col">
+                        <div class="dividerqr"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row contactusdfresh">
+    <div class="col">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-3"></div>
+                <div class="col col-md-6">
+                    <div class="bluebox">
+                        <h1 style="color: var(--bs-body-bg);font-size: 50px;font-weight: bold;">Contact Us</h1>
+                        <h5 style="color: var(--bs-body-bg);font-size: 30px;font-weight: bold;margin-top: 25px;">
+                            Riverview Fresh Market</h5><span
+                            style="margin-bottom: 27px;font-size: 26px;margin-top: -11px;">Latin food in
+                            Riverview</span><a href="tel:(813) 374-2353">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="margin-bottom: 12px;font-size: 28px;color: var(--bs-body-bg);">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.58l2.2-2.21c.28-.27.36-.66.25-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM12 3v10l3-3h6V3h-9z"></path>
+                                </svg>
+                                
+                                
+                                
+                                <span
+                                style="margin-bottom: 10px;">(813) 374-2353</span></a><a
+                            href="mailto:riverviewfreshmarket@hotmail.com"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor"
+                                style="margin-bottom: 10px;color: var(--bs-body-bg);font-size: 28px;">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z">
+                                </path>
+                            </svg><span style="margin-bottom: 19px;">riverviewfreshmarket@hotmail.com</span></a>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="margin-bottom: 13px;font-size: 28px;color: var(--bs-body-bg);">
+                                <rect fill="none" height="24" width="24"></rect>
+                                <path d="M12,2L12,2C8.13,2,5,5.13,5,9c0,1.74,0.5,3.37,1.41,4.84c0.95,1.54,2.2,2.86,3.16,4.4c0.47,0.75,0.81,1.45,1.17,2.26 C11,21.05,11.21,22,12,22h0c0.79,0,1-0.95,1.25-1.5c0.37-0.81,0.7-1.51,1.17-2.26c0.96-1.53,2.21-2.85,3.16-4.4 C18.5,12.37,19,10.74,19,9C19,5.13,15.87,2,12,2z M12,11.75c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5s2.5,1.12,2.5,2.5 S13.38,11.75,12,11.75z"></path>
+                            </svg>
+                            
+                            <span>9613 Hwy 301
+                            South, Riverview, FL 33578</span>
+                        <div class="rest">
+                            <p><strong></strong></p>
+                            <p><strong>OPENING HOURS</strong></p>
+                            <p>Sunday -Wednesday</p>
+                            <p>7am – 8pm</p>
+                            <p>Thursday – Saturday</p>
+                            <p>7am – 9pm</p>
+
+                            <ul class="redes">
+
+
+                                <li class="">
+                                    <a href="https://www.instagram.com/riverviewfreshmarket/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
+                                                fill="currentColor"></path>
+                                            <path
+                                                d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                                fill="currentColor"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
+                                                fill="currentColor"></path>
+                                        </svg>
+                                    </a>
+
+                                </li>
+                                <li class="">
+                                    <a href="https://www.facebook.com/riverviewfreshmarket" class="" target="_blank">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z"
+                                                fill="currentColor"></path>
+                                        </svg>
+
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://www.youtube.com/channel/UC7flXGGDtQyYC2gxWdMEFRg" class=""
+                                        target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z"
+                                                fill="currentColor"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="dividerfoot"></div>
+</div>
+

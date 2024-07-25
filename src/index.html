@@ -1,13 +1,550 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Riverviewfreshmarket</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <title>Riverviewfreshmarket</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fomo.valcorpdigital.com/assets/fomo_r1v3rvi5w_m0md4y/fomo.css?v=1718116426853">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/Navbar-Centered-Links-icons.css">
+    <link rel="stylesheet" href="../assets/css/navegacion.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  
+
+
+   
+    <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script>
+  
 </head>
+
 <body>
-  <app-root></app-root>
+    <app-root></app-root>
+    <!-- chat ia -->
+    <script type="text/javascript">function loadAcDiv(t){let e;(e=t.createElement("div")).id="embed-ab",e.async=!0,e.setAttribute("data-ab-id","ZLq9xxLe"),e.setAttribute("data-btn-bg","#00923F"),e.setAttribute("data-btn-img","https://myagencycoach.agency/storage/uploads/1252/img_1706558602_ITA.png"),e.setAttribute('data-avtr-img',"https://myagencycoach.agency/storage/uploads/1252/img_1706379091_WTT.png"),e.setAttribute("data-ab-url","https://myagencycoach.agency"),e.setAttribute("data-bub-ani","anim-ok"),e.setAttribute("data-wid-pos","fcpw-right"),t.body.appendChild(e)}function initialize(t){let e;(e=t.createElement("script")).id="script-ab",e.async=!0,(e.type = "text/javascript"),e.src="https://myagencycoach.agency/assets/chat/embed.js",e.onload=loadAcDiv(t),t.body.appendChild(e)}window.addEventListener?window.addEventListener("load",initialize(document),!1):window.attachEvent("load",initialize(document),!1);</script>
+
+    <!-- fomo -->
+    <script>var valcorpfomo_lang = "EN"; !function () { function e() { var e = ((new Date).getTime(), document.createElement("script")); e.type = "text/javascript", e.async = !0, e.src = "https://fomo.valcorpdigital.com/fomo_r1v3rvi5w_f4th3rd4y.js", window.top.document.getElementsByTagName("body")[0].appendChild(e) } var t = window; t.attachEvent ? t.attachEvent("onload", e) : t.addEventListener("load", e, !1) }();</script>  
+
+     <!-- script ada -->
+    <script> !function () { function e() { var e = ((new Date).getTime(), document.createElement("script")); e.type = "text/javascript", e.async = !0, e.setAttribute("embed-id", "7b81b7b7-9ea0-406a-bc99-abf3b743be0e"), e.src = "https://ada1.valcorpdigital.us/embed-scripts/7b81b7b7-9ea0-406a-bc99-abf3b743be0e", window.top.document.getElementsByTagName("body")[0].appendChild(e) } var t = window; t.attachEvent ? t.attachEvent("onload", e) : t.addEventListener("load", e, !1) }();</script> 
+
+      <!-- angelshare -->
+    
+
+         
+    <script>
+
+        var url_tarjeta_principal = "";
+        var url_tarjeta_principal_uri = "";
+
+        //INICIO VARIABLES QUE SON DINÁMICAS POR CADA TARJETA
+        var pais_por_defecto = 1;
+        var titulo_compartir = "Riverview Fresh Market";
+        var descripcion_compartir = "Riverview Fresh Market";
+        var imagen_compartir = "https://riverviewfreshmarkets.mybcard.net/wp-content/uploads/2021/04/opengraph.jpg";//imagen del opengraph
+        var id_popup_compartir = "172";
+        //FIN VARIABLES QUE SON DINÁMICAS POR CADA TARJETA
+
+        jQuery(function () {
+
+            //var btn_share_flotant=`<a id="btn_boton_share" class="compartir__share_flotante"><span class="fa fa-share-alt"></span></a>`;
+            //jQuery("body").append(btn_share_flotant);
+
+            /*
+            jQuery("#btn_boton_share").click(function(e){
+                e.preventDefault();
+                console.log("BOTON SHARE");
+                inicial();
+                //PUM.open(id_popup_compartir);
+            });
+            */
+        });
+
+
+        var listado_paises = [
+            { nombre: 'Afghanistan', codigo: 93 },
+            { nombre: 'Albania', codigo: 355 },
+            { nombre: 'Alemania', codigo: 49 },
+            { nombre: 'Algeria', codigo: 213 },
+            { nombre: 'Andorra', codigo: 376 },
+            { nombre: 'Angola', codigo: 244 },
+            { nombre: 'Anguilla', codigo: 1000 },
+            { nombre: 'Antárctica', codigo: 672 },
+            { nombre: 'Antigua', codigo: 1001 },
+            { nombre: 'Antillas Francesas', codigo: 596 },
+            { nombre: 'Antillas Holandesas', codigo: 599 },
+            { nombre: 'Arabia Saudita', codigo: 966 },
+            { nombre: 'Argentina', codigo: 54 },
+            { nombre: 'Armenia', codigo: 374 },
+            { nombre: 'Aruba', codigo: 297 },
+            { nombre: 'Australia', codigo: 61 },
+            { nombre: 'Austria', codigo: 43 },
+            { nombre: 'Azerbaiján', codigo: 994 },
+            { nombre: 'Bahamas', codigo: 1002 },
+            { nombre: 'Bahía de Guantanamo', codigo: 539 },
+            { nombre: 'Bahrain', codigo: 973 },
+            { nombre: 'Bangladesh', codigo: 880 },
+            { nombre: 'Barbados', codigo: 1003 },
+            { nombre: 'Belgica', codigo: 32 },
+            { nombre: 'Belice', codigo: 501 },
+            { nombre: 'Benin', codigo: 229 },
+            { nombre: 'Bermuda', codigo: 1004 },
+            { nombre: 'Bhutan', codigo: 975 },
+            { nombre: 'Bolivia', codigo: 591 },
+            { nombre: 'Bosnia y Herzegovina', codigo: 387 },
+            { nombre: 'Botswana', codigo: 267 },
+            { nombre: 'Brasil', codigo: 55 },
+            { nombre: 'Brunei', codigo: 673 },
+            { nombre: 'Bulgaria', codigo: 359 },
+            { nombre: 'Burkina Faso', codigo: 226 },
+            { nombre: 'Burma', codigo: 95 },
+            { nombre: 'Burundi', codigo: 257 },
+            { nombre: 'Cambodia', codigo: 855 },
+            { nombre: 'Camerún', codigo: 237 },
+            { nombre: 'Canada', codigo: 1 },
+            { nombre: 'Colombia', codigo: 57 },
+            { nombre: 'Comoros', codigo: 269 },
+            { nombre: 'Congo', codigo: 242 },
+            { nombre: 'Corea', codigo: 82 },
+            { nombre: 'Corea del Norte', codigo: 850 },
+            { nombre: 'Costa de Marfil', codigo: 225 },
+            { nombre: 'Costa Rica', codigo: 506 },
+            { nombre: 'Croacia', codigo: 385 },
+            { nombre: 'Cuba', codigo: 53 },
+            { nombre: 'Chad', codigo: 235 },
+            { nombre: 'Chile', codigo: 56 },
+            { nombre: 'China', codigo: 86 },
+            { nombre: 'Chipre', codigo: 357 },
+            { nombre: 'Diego Garcia', codigo: 246 },
+            { nombre: 'Dinamarca', codigo: 45 },
+            { nombre: 'Djibouti', codigo: 253 },
+            { nombre: 'Dominica', codigo: 1007 },
+            { nombre: 'Ecuador', codigo: 593 },
+            { nombre: 'Egipto', codigo: 20 },
+            { nombre: 'El Salvador', codigo: 503 },
+            { nombre: 'Emiratos Arabes Unidos', codigo: 971 },
+            { nombre: 'Eritea', codigo: 291 },
+            { nombre: 'Eslovaquia', codigo: 421 },
+            { nombre: 'España', codigo: 34 },
+            { nombre: 'Estados Unidos', codigo: 1 },
+            { nombre: 'Estonia', codigo: 372 },
+            { nombre: 'Etiopía', codigo: 251 },
+            { nombre: 'Filipinas', codigo: 63 },
+            { nombre: 'Finlandia', codigo: 358 },
+            { nombre: 'Francia', codigo: 33 },
+            { nombre: 'Gambia', codigo: 220 },
+            { nombre: 'Georgia', codigo: 995 },
+            { nombre: 'Ghana', codigo: 233 },
+            { nombre: 'Gibraltar', codigo: 350 },
+            { nombre: 'Granada', codigo: 1009 },
+            { nombre: 'Grecia', codigo: 30 },
+            { nombre: 'Groelandia', codigo: 299 },
+            { nombre: 'Guadalupe', codigo: 590 },
+            { nombre: 'Guam', codigo: 1671 },
+            { nombre: 'Guatemala', codigo: 502 },
+            { nombre: 'Guinea', codigo: 224 },
+            { nombre: 'Guinea-Bissau', codigo: 245 },
+            { nombre: 'Guinea Ecuatorial', codigo: 240 },
+            { nombre: 'Guyana', codigo: 592 },
+            { nombre: 'Guyana Francesa', codigo: 594 },
+            { nombre: 'Haití', codigo: 509 },
+            { nombre: 'Honduras', codigo: 504 },
+            { nombre: 'Hong Kong', codigo: 852 },
+            { nombre: 'Holanda', codigo: 31 },
+            { nombre: 'Hungría', codigo: 36 },
+            { nombre: 'India', codigo: 91 },
+            { nombre: 'Indonesia', codigo: 62 },
+            { nombre: 'Inglaterra / Reino Unido', codigo: 44 },
+            { nombre: 'Irán', codigo: 98 },
+            { nombre: 'Iraq', codigo: 964 },
+            { nombre: 'Irlanda', codigo: 353 },
+            { nombre: 'Isla Cabo Verde', codigo: 238 },
+            { nombre: 'Isla Navidad', codigo: 6724 },
+            { nombre: 'Isla Norforlk', codigo: 6723 },
+            { nombre: 'Isla Reunión', codigo: 262 },
+            { nombre: 'Islandía', codigo: 354 },
+            { nombre: 'Islas Ascención', codigo: 247 },
+            { nombre: 'Islas Caimán', codigo: 1006 },
+            { nombre: 'Islas Cook', codigo: 682 },
+            { nombre: 'Islas Faroe', codigo: 298 },
+            { nombre: 'Islas Fiji', codigo: 679 },
+            { nombre: 'Islas Maldivas', codigo: 960 },
+            { nombre: 'Islas Malvinas', codigo: 500 },
+            { nombre: 'Islas Marshall', codigo: 692 },
+            { nombre: 'Islas Mauricio', codigo: 230 },
+            { nombre: 'Isla Mayotte', codigo: 2696 },
+            { nombre: 'Islas Salomón', codigo: 677 },
+            { nombre: 'Isla Seychelles', codigo: 248 },
+            { nombre: 'Islas Tonga', codigo: 676 },
+            { nombre: 'Islas Vírgenes Americanas', codigo: 340 },
+            { nombre: 'Islas Vírgenes Británicas', codigo: 284 },
+            { nombre: 'Israel', codigo: 972 },
+            { nombre: 'Italia', codigo: 39 },
+            { nombre: 'Jamaica', codigo: 1010 },
+            { nombre: 'Japón', codigo: 81 },
+            { nombre: 'Jordania', codigo: 962 },
+            { nombre: 'Kazakhstán', codigo: 731 },
+            { nombre: 'Kenia', codigo: 254 },
+            { nombre: 'Kiribati', codigo: 686 },
+            { nombre: 'Kuwait', codigo: 965 },
+            { nombre: 'Kyrgyzstán', codigo: 733 },
+            { nombre: 'Laos', codigo: 856 },
+            { nombre: 'Latvia', codigo: 371 },
+            { nombre: 'Lesoto', codigo: 266 },
+            { nombre: 'Líbano', codigo: 961 },
+            { nombre: 'Liberia', codigo: 231 },
+            { nombre: 'Libia', codigo: 218 },
+            { nombre: 'Liechtenstein', codigo: 417 },
+            { nombre: 'Lituania', codigo: 370 },
+            { nombre: 'Luxemburgo', codigo: 352 },
+            { nombre: 'Macao', codigo: 853 },
+            { nombre: 'Macedonia', codigo: 389 },
+            { nombre: 'Madagascar', codigo: 261 },
+            { nombre: 'Malasia', codigo: 60 },
+            { nombre: 'Malawi', codigo: 265 },
+            { nombre: 'Malta', codigo: 356 },
+            { nombre: 'Marruecos', codigo: 212 },
+            { nombre: 'Mauritania', codigo: 222 },
+            { nombre: 'México', codigo: 52 },
+            { nombre: 'Micronesia', codigo: 691 },
+            { nombre: 'Moldova', codigo: 373 },
+            { nombre: 'Mónaco', codigo: 377 },
+            { nombre: 'Mongolia', codigo: 976 },
+            { nombre: 'Montserrat', codigo: 1011 },
+            { nombre: 'Mozambique', codigo: 258 },
+            { nombre: 'Myanmar', codigo: 95 },
+            { nombre: 'Namibia', codigo: 264 },
+            { nombre: 'Nauru', codigo: 674 },
+            { nombre: 'Nepal', codigo: 977 },
+            { nombre: 'Nevis', codigo: 1012 },
+            { nombre: 'Nicaragua', codigo: 505 },
+            { nombre: 'Niger', codigo: 227 },
+            { nombre: 'Nigeria', codigo: 234 },
+            { nombre: 'Niue', codigo: 683 },
+            { nombre: 'Noruega', codigo: 47 },
+            { nombre: 'Nueva Caledonia', codigo: 687 },
+            { nombre: 'Nueva Zelanda', codigo: 64 },
+            { nombre: 'Oceano Atlántico Este', codigo: 871 },
+            { nombre: 'Oceano Atlántico Oeste', codigo: 874 },
+            { nombre: 'Oceano Indico', codigo: 873 },
+            { nombre: 'Oceano Pacífico', codigo: 872 },
+            { nombre: 'Omán', codigo: 968 },
+            { nombre: 'Pakistan', codigo: 92 },
+            { nombre: 'Palau', codigo: 680 },
+            { nombre: 'Panamá', codigo: 507 },
+            { nombre: 'Papua Nueva Guinea', codigo: 675 },
+            { nombre: 'Paraguay', codigo: 595 },
+            { nombre: 'Perú', codigo: 51 },
+            { nombre: 'Polonia', codigo: 48 },
+            { nombre: 'Portugal', codigo: 351 },
+            { nombre: 'Puerto Rico', codigo: 1787 },
+            { nombre: 'Qatar', codigo: 974 },
+            { nombre: 'República Central Africana', codigo: 236 },
+            { nombre: 'República Checa', codigo: 42 },
+            { nombre: 'República Dominicana', codigo: 1008 },
+            { nombre: 'República Gabona', codigo: 241 },
+            { nombre: 'República de Mali', codigo: 223 },
+            { nombre: 'República de Senegal', codigo: 221 },
+            { nombre: 'República de Vanuatú', codigo: 7377 },
+            { nombre: 'Rumanía', codigo: 40 },
+            { nombre: 'Russia', codigo: 7 },
+            { nombre: 'Rwanda', codigo: 250 },
+            { nombre: 'Saipán', codigo: 1670 },
+            { nombre: 'Samoa Americana', codigo: 684 },
+            { nombre: 'Samoa Oeste', codigo: 685 },
+            { nombre: 'San Croix', codigo: 340 },
+            { nombre: 'San John', codigo: 340 },
+            { nombre: 'San Kitts', codigo: 1013 },
+            { nombre: 'San Marino', codigo: 378 },
+            { nombre: 'San Thomas', codigo: 340 },
+            { nombre: 'San Vicente', codigo: 1015 },
+            { nombre: 'Santa Elena', codigo: 290 },
+            { nombre: 'Santa Lucia', codigo: 1014 },
+            { nombre: 'Santa Piera y Miquelón', codigo: 508 },
+            { nombre: 'Sao Tome', codigo: 239 },
+            { nombre: 'Sierra Leona', codigo: 232 },
+            { nombre: 'Singapur', codigo: 65 },
+            { nombre: 'Siria', codigo: 963 },
+            { nombre: 'Slovakia', codigo: 421 },
+            { nombre: 'Slovenia', codigo: 386 },
+            { nombre: 'Somalía', codigo: 252 },
+            { nombre: 'Sri Lanka', codigo: 94 },
+            { nombre: 'Sudáfrica', codigo: 27 },
+            { nombre: 'Sudán', codigo: 249 },
+            { nombre: 'Suecia', codigo: 46 },
+            { nombre: 'Suiza', codigo: 41 },
+            { nombre: 'Surinam', codigo: 597 },
+            { nombre: 'Swazilandia', codigo: 268 },
+            { nombre: 'Tahití / Polinesia Francesa', codigo: 689 },
+            { nombre: 'Tailandía', codigo: 66 },
+            { nombre: 'Taiwan', codigo: 886 },
+            { nombre: 'Tajikstan', codigo: 73 },
+            { nombre: 'Tanzania', codigo: 255 },
+            { nombre: 'Togo', codigo: 228 },
+            { nombre: 'Trinidad y Tobago', codigo: 1016 },
+            { nombre: 'Tunisia', codigo: 216 },
+            { nombre: 'Turquía', codigo: 90 },
+            { nombre: 'Turkmenistán', codigo: 993 },
+            { nombre: 'Tuvalú', codigo: 688 },
+            { nombre: 'Uganda', codigo: 256 },
+            { nombre: 'Ukrania', codigo: 380 },
+            { nombre: 'Uruguay', codigo: 598 },
+            { nombre: 'Uzbekistán', codigo: 737 },
+            { nombre: 'Vaticano', codigo: 396 },
+            { nombre: 'Venezuela', codigo: 58 },
+            { nombre: 'Vietnam', codigo: 84 },
+            { nombre: 'Wallis y Futuna', codigo: 681 },
+            { nombre: 'Yemen', codigo: 967 },
+            { nombre: 'Yugoslavia', codigo: 381 },
+            { nombre: 'Zaire', codigo: 243 },
+            { nombre: 'Zambia', codigo: 260 },
+            { nombre: 'Zimbabwe', codigo: 263 },
+
+        ];
+
+        /*
+        function inicial(){
+          
+            url_tarjeta_principal=window.location.href;
+            url_tarjeta_principal_uri=encodeURIComponent(url_tarjeta_principal);
+            jQuery("#texto_copiar").val(url_tarjeta_principal);
+            new Clipboard('.compartir__copiar');        
+
+            var cadena_indicadores='';
+            var select_indicadores='';
+            for(var i=0;i<listado_paises.length;i++){
+                select_indicadores='';
+                if(listado_paises[i].codigo==pais_por_defecto){
+                    select_indicadores='selected';
+                }
+                cadena_indicadores+=`<option ${select_indicadores} value="${listado_paises[i].codigo}">(+${listado_paises[i].codigo}) ${listado_paises[i].nombre}</option>`;
+            }
+            jQuery("#indicador").html(cadena_indicadores);
+
+
+            jQuery("#btn_share_whatsapp").click(function(e){
+                e.preventDefault();
+                send_whatsapp_sms(1);
+            });
+
+            jQuery("#btn_share_sms").click(function(e){
+                e.preventDefault();
+                send_whatsapp_sms(2);
+            });
+
+            //ENVIAR ENLACE FACEBOOK
+            jQuery(".compartir__facebook").click(function(e){        
+                e.preventDefault();
+                var url_share=`http://www.facebook.com/sharer/sharer.php?u=${url_tarjeta_principal_uri}&p[title]=${titulo_compartir}&p[summary]=${descripcion_compartir}&p[images][0]=${imagen_compartir}`;
+                window.open(url_share,"_blank");
+            });
+
+            //ENVIAR ENLACE TWITTER
+            jQuery(".compartir__twitter").click(function(e){        
+                e.preventDefault();
+                var titulo_compartir_twitter=titulo_compartir.replace(" ","+");
+                var url_share=`http://twitter.com/home?status=${titulo_compartir_twitter}...++${url_tarjeta_principal_uri}+`;
+                window.open(url_share,"_blank");
+            });
+
+            //ENVIAR ENLACE PINTEREST
+            jQuery(".compartir__pinterest").click(function(e){        
+                e.preventDefault();
+                var url_share=`http://pinterest.com/pin/create/button/?url=${url_tarjeta_principal}&media=${imagen_compartir}&description=${titulo_compartir}`;
+                window.open(url_share,"_blank");
+            });
+
+            //ENVIAR ENLACE LINKEDIN
+            jQuery(".compartir__linkedin").click(function(e){        
+                e.preventDefault();
+                var url_share=`https://www.linkedin.com/shareArticle?mini=true&url=${url_tarjeta_principal}&title=${titulo_compartir}&summary=${descripcion_compartir}&source=`;
+                window.open(url_share,"_blank");
+            });
+
+            //ENVIAR ENLACE EMAIL
+            jQuery(".compartir__mensaje").click(function(e){        
+                e.preventDefault();
+                var url_share=`mailto:?subject=${titulo_compartir}&body=${descripcion_compartir} ${url_tarjeta_principal}`;
+                window.open(url_share,"_blank");
+            });
+
+            //ENVIAR ENLACE TELEGRAM
+            jQuery(".compartir__telegram").click(function(e){        
+                e.preventDefault();
+                var url_share=`tg://msg?text=${titulo_compartir}&body=${descripcion_compartir} ${url_tarjeta_principal}`;
+                window.open(url_share,"_blank");
+            });
+
+
+          
+
+        }
+        */
+
+
+        function inicial() {
+
+            // Obtiene la URL actual y la codifica
+            let url_tarjeta_principal = window.location.href;
+            let url_tarjeta_principal_uri = encodeURIComponent(url_tarjeta_principal);
+
+            // Asigna la URL al campo de texto
+            document.getElementById("texto_copiar").value = url_tarjeta_principal;
+
+            // Inicializa Clipboard.js
+            new Clipboard('.compartir__copiar');
+
+            // Genera las opciones para el select
+            let cadena_indicadores = '';
+            let select_indicadores = '';
+            for (let i = 0; i < listado_paises.length; i++) {
+                select_indicadores = '';
+                if (listado_paises[i].codigo == pais_por_defecto) {
+                    select_indicadores = 'selected';
+                }
+                cadena_indicadores += `<option ${select_indicadores} value="${listado_paises[i].codigo}">(+${listado_paises[i].codigo}) ${listado_paises[i].nombre}</option>`;
+            }
+            document.getElementById("indicador").innerHTML = cadena_indicadores;
+
+            // Maneja los eventos de los botones de compartir
+            document.getElementById("btn_share_whatsapp").addEventListener("click", function (e) {
+                e.preventDefault();
+                send_whatsapp_sms(1);
+            });
+
+            document.getElementById("btn_share_sms").addEventListener("click", function (e) {
+                e.preventDefault();
+                send_whatsapp_sms(2);
+            });
+
+            // Función para abrir ventanas con enlaces de compartir
+            function openShareWindow(url) {
+                window.open(url, "_blank");
+            }
+
+            // Compartir en Facebook
+            document.querySelector(".compartir__facebook").addEventListener("click", function (e) {
+                e.preventDefault();
+                let url_share = `http://www.facebook.com/sharer/sharer.php?u=${url_tarjeta_principal_uri}&p[title]=${titulo_compartir}&p[summary]=${descripcion_compartir}&p[images][0]=${imagen_compartir}`;
+                openShareWindow(url_share);
+            });
+
+            // Compartir en Twitter
+            document.querySelector(".compartir__twitter").addEventListener("click", function (e) {
+                e.preventDefault();
+                let titulo_compartir_twitter = titulo_compartir.replace(" ", "+");
+                let url_share = `http://twitter.com/home?status=${titulo_compartir_twitter}...++${url_tarjeta_principal_uri}+`;
+                openShareWindow(url_share);
+            });
+
+            // Compartir en Pinterest
+            document.querySelector(".compartir__pinterest").addEventListener("click", function (e) {
+                e.preventDefault();
+                let url_share = `http://pinterest.com/pin/create/button/?url=${url_tarjeta_principal}&media=${imagen_compartir}&description=${titulo_compartir}`;
+                openShareWindow(url_share);
+            });
+
+            // Compartir en LinkedIn
+            document.querySelector(".compartir__linkedin").addEventListener("click", function (e) {
+                e.preventDefault();
+                let url_share = `https://www.linkedin.com/shareArticle?mini=true&url=${url_tarjeta_principal}&title=${titulo_compartir}&summary=${descripcion_compartir}&source=`;
+                openShareWindow(url_share);
+            });
+
+            // Compartir por Email
+            document.querySelector(".compartir__mensaje").addEventListener("click", function (e) {
+                e.preventDefault();
+                let url_share = `mailto:?subject=${titulo_compartir}&body=${descripcion_compartir} ${url_tarjeta_principal}`;
+                openShareWindow(url_share);
+            });
+
+            // Compartir en Telegram
+            document.querySelector(".compartir__telegram").addEventListener("click", function (e) {
+                e.preventDefault();
+                let url_share = `tg://msg?text=${titulo_compartir}&body=${descripcion_compartir} ${url_tarjeta_principal}`;
+                openShareWindow(url_share);
+            });
+
+
+
+
+
+        }
+
+
+        //MÁS OPCIONES PARA COMPARTIR - SHARE NATIVO
+        (() => {
+            'use strict';
+            // check if share API is supported or not
+            if (navigator.share !== undefined) {
+                document.addEventListener('DOMContentLoaded', () => {
+                    // select the html element with the class "share"
+                    var shareBtn = document.querySelector('.compartir__opciones');
+                    // add share button event listener
+                    shareBtn.addEventListener('click', (event) => {
+                        // web share API
+                        navigator.share({
+                            // pick the default title of your page in the title tag
+                            title: titulo_compartir,
+                            // change the text of your share as you may like; to e.g desc of your pwa
+                            text: titulo_compartir,
+                            url: window.location.href
+                        })
+                            .then(() => {
+                                console.info('PWA shared successfully!');
+                            })
+                            .catch((error) => {
+                                console.error('Whoa! failed to share : ', error);
+                            })
+                    });
+                });
+            }
+        })();
+
+
+        //ENVIAR POR NÚMERO WHATSAPP O SMS
+        function send_whatsapp_sms(tipo) {
+            var url_share = "";
+            var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+            var numero_celular_share = "" + jQuery("#fi_share_celular").val();
+            numero_celular_share = numero_celular_share.trim();
+            numero_celular_share = numero_celular_share.replace(/ /g, "");
+            if (tipo == "1") {
+                url_share = "";
+                if (numero_celular_share != "") {
+                    numero_celular_share = jQuery("#indicador").val() + "" + numero_celular_share;
+                    url_share = `https://api.whatsapp.com/send?phone=${numero_celular_share}&text=${titulo_compartir} - ${url_tarjeta_principal}`;
+                } else {
+                    url_share = `https://api.whatsapp.com/send?text=${titulo_compartir} - ${url_tarjeta_principal}`;
+                }
+            } else {
+                url_share = "";
+                if (iOS) {
+                    url_share = "sms:" + numero_celular_share + "&body=" + titulo_compartir + " - " + url_tarjeta_principal;
+                } else {
+                    url_share = "sms://" + numero_celular_share + "?body=" + titulo_compartir + " - " + url_tarjeta_principal;
+                }
+            }
+            window.open(url_share, "_self");
+        }
+
+
+    </script> 
+
+
 </body>
+
 </html>

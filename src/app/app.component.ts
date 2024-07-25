@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavComponent } from './nav/nav.component';
+import { EstadosService } from './estados.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'riverviewfreshmarket';
+  constructor( public estadosService: EstadosService) { }
+
+
+
 }
